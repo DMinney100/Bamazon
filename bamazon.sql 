@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS ;
+CREATE database ;
+
+USE bamazon DB;
+
+-- Create a table called 'products' which will contain the store inventory --
+CREATE TABLE products (
+	item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
+	product_name VARCHAR(30) NOT NULL,
+	department_name VARCHAR(20) NOT NULL,
+	price DECIMAL(10,2) NOT NULL,
+	stock_quantity INTEGER(11) NOT NULL,
+	PRIMARY KEY (item_id)
+);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+    VALUES  ('Island Green Foamposite', 'Nike', 300, 3),
+    VALUES  ('Gatorade VIs', 'Jordan', 350, 2),
+    VALUES  ('Silver Bullet Air Max', 'Nike' 220, 4),
+    VALUES  ('Gold Rush Vapor Max', 'Nike', 500, 1),
+    VALUES  ('Motorsport 4s, 'Jordan', 300, 3),
+    VALUES  ('Space Jam XIs', 'Jordan', 350, 6),
+    VALUES  ('Playoff IIIs', 'Jordan', 220, 4),
+    VALUES  ('Infared VIs', 'Jordan', 450, 2),
+    VALUES  ('HOF Is', 'Jordan', 600, 1),
+    VALUES  ('Fomaposite Galaxy', 'Nike', 1200, 1),
